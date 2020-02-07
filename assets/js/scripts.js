@@ -1,0 +1,5 @@
+// @codekit-append "scripts/lib/arketype.js"
+// @codekit-append "scripts/lib/timer.jquery.min.js"
+// @codekit-append "scripts/lib/jquery.fancybox.min.js"
+// @codekit-append "scripts/lib/slick.min.js"
+// @codekit-append "scripts/core.js"

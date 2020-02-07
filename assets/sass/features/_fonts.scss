@@ -1,0 +1,7 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* -- Fonts -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+@include font-face("icomoon", "../fonts/icomoon/icomoon", $file-formats: woff svg ttf);

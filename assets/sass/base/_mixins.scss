@@ -1,0 +1,80 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Mixins */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* -- Adds a clearfix for the current selector -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@mixin clearfix() {
+	&:after { content: ""; height: 0; display: block; clear: both; overflow: hidden; visibility: hidden; }
+}
+
+
+
+
+/* -- Adds an hover/focus state for the current selector -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@mixin hover() {
+	html:not(.mobile) &:hover,
+	html.mobile &.touched,
+	html.mobile &:active {
+		@content;
+	}
+}
+
+
+
+/* -- Outputs a basic Icomoon rule -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@mixin icomoon($_content, $_font-size) {
+	content: $_content; font-style: normal; font-weight: normal; font-size: $_font-size; line-height: 1em; font-family: $font-icomoon;
+}
+
+
+
+/* -- Vertical align center -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@mixin v-align($position) {
+	position: $position;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+/* -- Horizontal align center -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@mixin h-align($position) {
+	position: $position;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/* -- Vertical and Horizontal align center -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@mixin vh-align($position) {
+	position: $position;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/* -- Maintain Aspect Ratio-- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,154 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Variables */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* -- Built-In Fonts -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$font-arial     : Arial, Helvetica, sans-serif;
+$font-courier   : Courier, "Courier New", Monaco, monospace;
+$font-georgia   : Georgia, Times, "Times New Roman", serif;
+$font-helvetica : Helvetica, Arial, sans-serif;
+$font-menlo     : "Menlo Regular", Monaco, Courier, "Courier New", monospace;
+$font-times     : Times, "Times New Roman", Georgia, serif;
+$font-trebuchet : "Trebuchet MS", Verdana, "Lucida Grande", Lucida, "Lucida Sans Unicode", sans-serif;
+$font-verdana   : Verdana, "Lucida Grande", Lucida, "Lucida Sans Unicode", sans-serif;
+
+/* -- Imported Fonts -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$font-lato       : "Lato", sans-serif;
+$font-proxima-nova  : "proxima-nova", sans-serif;
+$font-essonnes-text : "essonnes-text", serif;
+$font-open-sans     : "open-sans", sans-serif;
+
+
+
+
+/* -- Font weights -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$fontweight-thin      : 100;
+$fontweight-light     : 300;
+$fontweight-regular   : 400;
+$fontweight-medium    : 500;
+$fontweight-semibold  : 600;
+$fontweight-bold      : 700;
+$fontweight-extrabold : 800;
+$fontweight-black     : 900;
+
+
+
+
+/* -- Transitions -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$transition-duration        : .25s;
+$transition-timing-function : ease-in-out;
+
+
+
+
+/* -- Media queries breakpoints -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$breakpoint-desktop          : "max-width: 1400px";
+$breakpoint-tablet-portrait  : "max-width: 1023px";
+$breakpoint-mobile-landscape : "max-width: 767px";
+$breakpoint-mobile-portrait  : "max-width: 479px";
+
+
+
+
+/* -- Page  -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$page-width     : 1920px;
+$page-width-min : 1400px;
+$page-padding   : 20px;
+$block-padding  : ( width: 20px, height: 40px );
+
+
+
+
+/* -- Colors -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$color-page-background	: #000;
+$color-primary         	: #007bc4;
+$color-secondary       	: #85c426;
+$color-text            	: #323a40;
+$color-menu            	: #1c2021;
+$color-dark-module     	: #f0f7fb;
+$color-light-module    	: #e4ebef;
+
+$color-mlp          	: #ec008c;
+$color-gijoe         	: #003663;
+$color-marvel          	: #f11e22;
+$color-starwars        	: #f26522;
+$color-transformers    	: #c31f3c;
+
+
+
+/* -- Belt colors -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$ceinture-blanche 	: #ffffff;
+$ceinture-jaune		: #f7dd3e;
+$ceinture-orange	: #c96a32;
+$ceinture-mauve		: #663f82;
+$ceinture-bleu		: #2c5290;
+$ceinture-verte		: #327f51;
+$ceinture-brune		: #4f3d27;
+
+
+
+/* -- Icomoon Font Icons -- */
+$icomoon-facebook   		: "\e900";
+$icomoon-google     		: "\e901";
+$icomoon-instagram  		: "\e902";
+$icomoon-pinterest  		: "\e903";
+$icomoon-twitter    		: "\e904";
+$icomoon-checkmark  		: "\e914";
+$icomoon-map-marker 		: "\e913";
+$icomoon-close      		: "\e911";
+$icomoon-arrow      		: "\e905";
+$icomoon-arrow-dbl  		: "\e906";
+$icomoon-camera     		: "\e907";
+$icomoon-comment    		: "\e908";
+$icomoon-duration   		: "\e909";
+$icomoon-activity   		: "\e912";
+$icomoon-edit       		: "\e90a";
+$icomoon-email      		: "\e90b";
+$icomoon-filter     		: "\e90c";
+$icomoon-play       		: "\e90d";
+$icomoon-search     		: "\e90e";
+$icomoon-trash      		: "\e90f";
+$icomoon-wishlist   		: "\e910";
+$icomoon-calendar   		: "\e915";
+$icomoon-add-to-collection	: "\e922";
+$icomoon-buy	   			: "\e923";
+
+$icomoon-facebook-comment	: "\e916";
+$icomoon-facebook-like		: "\e917";
+$icomoon-facebook-share		: "\e918";
+$icomoon-instagram-comment	: "\e919";
+$icomoon-instagram-follower	: "\e91a";
+$icomoon-instagram-like		: "\e91b";
+$icomoon-social-facebook	: "\e91c";
+$icomoon-social-instagram	: "\e91d";
+$icomoon-twitter-like		: "\e91e";
+$icomoon-twitter-more		: "\e91f";
+$icomoon-twitter-reply		: "\e920";
+$icomoon-twitter-retweet	: "\e921";
+
+
+
+
+
+/* -- Sizes -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$size-text : 2rem;
+
+
+
+
+
+
+
+/* -- Other -- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+$overlay-pattern : url(../img/overlay-pattern.png) 0 0 repeat;
+$sky-gradient    : linear-gradient( #5197d1 34%, #a8cbe8 72%, white);
